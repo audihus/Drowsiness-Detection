@@ -44,10 +44,11 @@ def eye_aspect_ratio(eye):
 
     return ear
 def mouth_aspect_ratio(mouth):
-    A = dist.euclidean(mouth[3], mouth[9])
-    B = dist.euclidean(mouth[2], mouth[10])
-    C = dist.euclidean(mouth[4], mouth[8])
-    mar = (A + B + C) / 3
+    A = dist.euclidean(mouth[1], mouth[7])
+    B = dist.euclidean(mouth[2], mouth[6]) 
+    C = dist.euclidean(mouth[3], mouth[5])  
+    D =  dist.euclidean(mouth[0], mouth[4]) 
+    mar = (A + B + C) / (2.0 * D)
     return mar
 
 print("[INFO] loading facial landmark predictor...")
