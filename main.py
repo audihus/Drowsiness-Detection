@@ -131,7 +131,13 @@ while True:
 
         cv2.putText(frame, "EAR: {:.2f}".format(ear),(300, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,0,255),2)
         cv2.putText(frame, "MAR: {:.2f}".format(mar),(300, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,0,255),2)
-    
+
+        if EYE_ALARM_ON:
+            print(f"[ALARM] at {time.strftime('%H:%M:%S')} - EAR: {ear:.2f}, MAR: {mar:.2f}")
+
+        if MOUTH_ALARM_ON:
+            print(f"[ALERT] at {time.strftime('%H:%M:%S')} - EAR: {ear:.2f}, MAR: {mar:.2f}")
+
     cv2.imshow("Frame", frame)
     key = cv2.waitKey(1) & 0xFF
 
