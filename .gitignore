@@ -1,0 +1,12 @@
+# Local datasets and experiment output (too large or machine-specific for GitHub)
+/data/
+/dataset testing.zip
+/labels.csv
+/error_log.txt
+
+# Local custom-model copy; the curated version is tracked through Git LFS below.
+/optimal_eye_mouth_predictor.dat
+
+# Python cache
+__pycache__/
+*.py[cod]
