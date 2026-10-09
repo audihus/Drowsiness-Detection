@@ -3,6 +3,9 @@
 /dataset testing.zip
 /labels.csv
 /error_log.txt
+/training/dlib-shape-predictor/ibug_300W_large_face_landmark_dataset/
+/training/dlib-shape-predictor/*.tar.gz
+/training/dlib-shape-predictor/trials.csv
 
 # Local custom-model copy; the curated version is tracked through Git LFS below.
 /optimal_eye_mouth_predictor.dat

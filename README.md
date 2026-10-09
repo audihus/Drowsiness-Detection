@@ -49,6 +49,12 @@ git lfs pull
 The project paper is available at
 [`docs/Real-Time-Drowsiness-Detection-Based-on-Facial-Features.pdf`](docs/Real-Time-Drowsiness-Detection-Based-on-Facial-Features.pdf).
 
+## Training
+
+The scripts used to train, tune, and evaluate the custom dlib shape predictor
+are available in [`training/dlib-shape-predictor`](training/dlib-shape-predictor).
+The training dataset is excluded from the repository because of its size.
+
 ## Project structure
 
 ```text
@@ -57,5 +63,6 @@ The project paper is available at
 ├── shape_predictor_68_face_landmarks.dat
 ├── alertSound.wav
 ├── models/eye-mouth-landmarks/      # Custom dlib models and model card
+├── training/dlib-shape-predictor/   # Training, tuning, and evaluation scripts
 └── docs/                            # Project paper
 ```
